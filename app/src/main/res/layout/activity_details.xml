@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    tools:ignore="MissingConstraints">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="157dp"
+                android:layout_height="278dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/border"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="223dp"
+                android:layout_height="41dp"
+                android:layout_centerHorizontal="true"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/tagline"
+                android:layout_width="103dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/name"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/image"
+                android:text="Tagline:"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/taglineValue"
+                android:layout_width="178dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/tagline"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@+id/image"
+                android:text="TextView"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="103dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/taglineValue"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/image"
+                android:text="Year:"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/yearValue"
+                android:layout_width="176dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/year"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@id/image"
+                android:text="TextView"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/abv"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/yearValue"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/image"
+                android:text="Alcohol by volume:"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/abvValue"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/abv"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@id/image"
+                android:text="TextView"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/image"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Description:"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/descValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc"
+                android:layout_marginStart="40dp"
+                android:text="TextView"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
